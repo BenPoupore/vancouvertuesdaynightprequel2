@@ -18,6 +18,6 @@ public class move : MonoBehaviour{
         float forward = Input.GetAxis("Vertical");
         float strafe = Input.GetAxis("Horizontal");
 
-        RB.velocity = new Vector2(velx, vely).normalized * speed;
+        RB.linearVelocity = new Vector2(velx, vely).normalized * speed;
     }
 }

@@ -19,7 +19,7 @@ void Start()
         initialposition =  transform.position;
 
         if (enable_precision) { transform.localRotation = Quaternion.Euler(Random.Range(-precision, precision), Random.Range(-precision, precision), Random.Range(-precision, precision)); }
-        rb.velocity = transform.forward * speed;
+        rb.linearVelocity = transform.forward * speed;
     }
 
     void Update()
