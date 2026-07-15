@@ -5,12 +5,14 @@ using UnityEngine;
 public class player_move : MonoBehaviour
 {
 
-        public GameObject player;
-    public float speed;
-    public float mouseSensitivityX = 5.0f;
-    public float mouseSensitivityY = 5.0f;
+    [SerializeField] private GameObject player;
+    [SerializeField] private float speed;
+    [SerializeField] private float mouseSensitivityX = 5.0f;
+    [SerializeField] private float mouseSensitivityY = 5.0f;
+    [SerializeField] private float jumpieness = 1f;
 
     private float rotY = 0.0f;
+    private bool can_jump = true;
 
     public Camera cam;
     public Rigidbody RB;
@@ -38,8 +40,23 @@ public class player_move : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) { trans += -transform.right; }
         if (Input.GetKey(KeyCode.S)) { trans += -Vector3.ProjectOnPlane(transform.forward, Vector3.up); }
         if (Input.GetKey(KeyCode.D)) { trans += transform.right; }
+       
         trans.Normalize();
 
-        gameObject.transform.position += trans*speed/100;
+        transform.position += trans*speed/100;
+
+        if (Input.GetKeyDown(KeyCode.Space) && can_jump) { 
+            RB.AddForce(Vector3.up * jumpieness, ForceMode.Impulse);
+            can_jump = false;
+        }
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("ground"))
+        {
+            can_jump = true;
+        }
+    }
+
 }
