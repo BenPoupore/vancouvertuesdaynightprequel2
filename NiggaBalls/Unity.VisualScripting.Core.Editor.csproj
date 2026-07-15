@@ -444,8 +444,8 @@
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\Inspection\InspectorBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\Utilities\MathfEx.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\Widgets\GraphElementWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\Context\GraphClipboard.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\Reflection\NamespaceOption.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\Context\GraphClipboard.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\Interface\Annotations\AnnotationDisabler.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\Windows\AboutWindow\AboutPluginsPage.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\Utilities\MD4.cs" />

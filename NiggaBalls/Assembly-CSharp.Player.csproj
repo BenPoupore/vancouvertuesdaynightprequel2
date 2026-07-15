@@ -61,19 +61,22 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.19f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\enemy_1_behaviour.cs" />
+    <Compile Include="Assets\scripts\emeny_bullet_launcher.cs" />
+    <Compile Include="Assets\scripts\bullet_behaviour.cs" />
+    <Compile Include="Assets\scripts\enemy_2_behaviour.cs" />
     <Compile Include="Assets\Kiosk\Scripts\CameraFreeflight.cs" />
-    <Compile Include="Assets\move.cs" />
-    <Compile Include="Assets\cam_move.cs" />
-    <Compile Include="Assets\pause_menu_script.cs" />
-    <Compile Include="Assets\player_move.cs" />
-    <Compile Include="Assets\enemy_2_behaviour.cs" />
-    <Compile Include="Assets\bullet_behaviour.cs" />
-    <Compile Include="Assets\player_bullet_behaviour.cs" />
-    <Compile Include="Assets\heavy_truck_behaviour.cs" />
-    <Compile Include="Assets\emeny_bullet_launcher.cs" />
-    <Compile Include="Assets\player_bullet_launcher.cs" />
-    <Compile Include="Assets\player_camera.cs" />
+    <Compile Include="Assets\scripts\heavy_truck_behaviour.cs" />
+    <Compile Include="Assets\scripts\enemy_1_behaviour.cs" />
+    <Compile Include="Assets\scripts\player_camera.cs" />
+    <Compile Include="Assets\scripts\EliasEnemy.cs" />
+    <Compile Include="Assets\scripts\player_bullet_launcher.cs" />
+    <Compile Include="Assets\scripts\move.cs" />
+    <Compile Include="Assets\scripts\BillBoard.cs" />
+    <Compile Include="Assets\scripts\player_bullet_behaviour.cs" />
+    <Compile Include="Assets\scripts\CursorLock.cs" />
+    <Compile Include="Assets\scripts\player_move.cs" />
+    <Compile Include="Assets\scripts\pause_menu_script.cs" />
+    <Compile Include="Assets\scripts\cam_move.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Kiosk\install_RP_Versions.txt" />
@@ -365,10 +368,6 @@
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.19f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.VFXModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.VRModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.19f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.VRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.VectorGraphicsModule">
