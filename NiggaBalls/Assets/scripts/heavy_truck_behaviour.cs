@@ -11,8 +11,6 @@ public class heavy_truck_behaviour : MonoBehaviour
     public float attack_radius = 30;
 
     public GameObject player;
-    public GameObject hitboxbody;
-    public GameObject hitboxhead;
     public GameObject bullet_launcher;
 
     void Start()
@@ -31,7 +29,7 @@ public class heavy_truck_behaviour : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(player.transform.position - transform.position);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotate_speed * Time.deltaTime);
 
-        transform.position += transform.forward * move_speed / 100;
+        transform.position += Vector3.ProjectOnPlane(transform.forward, Vector3.up) * move_speed / 100;
 
         if (health == 0) { Destroy(gameObject); }
 
