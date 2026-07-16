@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class bullet_behaviour : MonoBehaviour
 {
-    public Rigidbody rb;
-    public float speed = 1;
-    public float despawn_radius = 50;
-    public float precision = 0;
-    public bool enable_precision = false;
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private float speed = 1;
+    [SerializeField] private float despawn_radius = 50;
+    [SerializeField] private float precision = 0;
+    [SerializeField] private bool enable_precision = false;
+    public int bullet_damage = 10;
   
 
     private Vector3 initialposition;

@@ -1870,6 +1870,10 @@ PrefabInstance:
       propertyPath: m_ProvidesContacts
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6932482082170806447, guid: d189401e4d1201a4f9205d8ab1855c69, type: 3}
+      propertyPath: firerate
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6932482082870593696, guid: d189401e4d1201a4f9205d8ab1855c69, type: 3}
       propertyPath: m_RootOrder
       value: 4

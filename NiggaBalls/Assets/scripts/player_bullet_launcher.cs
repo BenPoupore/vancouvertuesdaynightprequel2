@@ -4,19 +4,29 @@ using UnityEngine;
 
 public class player_bullet_launcher : MonoBehaviour
 {
-    public GameObject bullet;
-    public Camera cam;
-    public float bullet_speed = 1;
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private Camera cam;
+    [SerializeField] private float firerate = 1;
+    [SerializeField] private bool fullauto = false;
 
-    void Start()
-    {
+    private float nextfiretime = 0;
+
+    void Start(){
     }
 
-    void Update()
-    {
-    if (Input.GetMouseButtonDown(0)) {
-            GameObject newbullet =  Instantiate(bullet, transform.position, transform.rotation);
+
+    void Update(){
+
+        if (fullauto && Input.GetMouseButton(0) && Time.time >= nextfiretime)
+        {
+            spawnbullet();
+            nextfiretime = Time.time + 1/firerate;
         }
+        else if (!fullauto && Input.GetMouseButtonDown(0)) {spawnbullet();}
+    }
+
+    void spawnbullet() {
+        GameObject newbullet = Instantiate(bullet, transform.position, transform.rotation);
     }
 }
 
