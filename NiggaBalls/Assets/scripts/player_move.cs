@@ -6,6 +6,7 @@ public class player_move : MonoBehaviour
 {
 
     [SerializeField] private GameObject player;
+    [SerializeField] private int health = 1000;
     [SerializeField] private float speed;
     [SerializeField] private float mouseSensitivityX = 5.0f;
     [SerializeField] private float mouseSensitivityY = 5.0f;
@@ -57,6 +58,16 @@ public class player_move : MonoBehaviour
         {
             can_jump = true;
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        bullet_behaviour enemyScript = other.GetComponent<bullet_behaviour>();
+
+        Debug.Log(other.name + " entered");
+        if (enemyScript != null) { health -= enemyScript.bullet_damage; }
+        Destroy(enemyScript);
+
     }
 
 }

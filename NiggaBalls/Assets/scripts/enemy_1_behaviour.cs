@@ -44,8 +44,6 @@ public class enemy_1_behaviour : MonoBehaviour
             private_strafe_speed = 0;
         }
 
-        Debug.Log((private_strafe_speed-0.5f));
-
         Quaternion targetRotation = Quaternion.LookRotation(player.transform.position - transform.position);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotate_speed * Time.deltaTime);
 

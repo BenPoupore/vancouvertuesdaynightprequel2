@@ -30,7 +30,7 @@ public class enemy_2_behaviour : MonoBehaviour
 
         transform.position += Vector3.ProjectOnPlane(transform.forward, Vector3.up) * move_speed / 100;
 
-        if (health == 0) { Destroy(gameObject); }
+        if (health < 0) { Destroy(gameObject); }
 
     }
 

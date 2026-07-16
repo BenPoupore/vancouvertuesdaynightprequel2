@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8207284917024941714}
   - component: {fileID: 5893401337351367916}
-  - component: {fileID: 8040055869124868769}
+  - component: {fileID: 3588526933154633902}
   m_Layer: 0
   m_Name: robert (1)
   m_TagString: enemy
@@ -51,8 +51,8 @@ MonoBehaviour:
   rotate_speed: 110.28
   attack_radius: 8.1
   player: {fileID: 6932482082870593697, guid: d189401e4d1201a4f9205d8ab1855c69, type: 3}
---- !u!65 &8040055869124868769
-BoxCollider:
+--- !u!136 &3588526933154633902
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -69,9 +69,11 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.2637025, y: 1.0999358, z: 0.333745}
-  m_Center: {x: -0.005663812, y: -0.116627574, z: 0.0073953867}
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2.16
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6783165035091669141
 GameObject:
   m_ObjectHideFlags: 0
