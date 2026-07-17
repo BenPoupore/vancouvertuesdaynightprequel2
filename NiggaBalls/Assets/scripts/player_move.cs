@@ -64,9 +64,12 @@ public class player_move : MonoBehaviour
     {
         bullet_behaviour enemyScript = other.GetComponent<bullet_behaviour>();
 
-        Debug.Log(other.name + " entered");
-        if (enemyScript != null) { health -= enemyScript.bullet_damage; }
-        Destroy(enemyScript);
+        //Debug.Log(other.name + " entered");
+        if (enemyScript != null) {
+            //Debug.Log(enemyScript.bullet_damage);
+            health -= enemyScript.bullet_damage; 
+        }
+    
 
     }
 

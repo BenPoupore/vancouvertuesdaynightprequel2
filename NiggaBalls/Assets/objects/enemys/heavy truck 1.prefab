@@ -34,7 +34,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &214447958091502029
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -91,6 +91,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &5811209927475468369
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,11 +235,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 415962777025560325, guid: 47fcd9238b6f0784ca6b4e99eefd10a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.137
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 415962777025560325, guid: 47fcd9238b6f0784ca6b4e99eefd10a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.14
+      value: -0.275
       objectReference: {fileID: 0}
     - target: {fileID: 415962777025560325, guid: 47fcd9238b6f0784ca6b4e99eefd10a3, type: 3}
       propertyPath: m_LocalPosition.z
