@@ -26,7 +26,7 @@ public class heavy_truck_behaviour : MonoBehaviour
         if (diatance.magnitude > attack_radius) { bullet_launcher.SetActive(false); }
         else { bullet_launcher.SetActive(true); }
 
-        Quaternion targetRotation = Quaternion.LookRotation(player.transform.position - transform.position);
+        Quaternion targetRotation = Quaternion.LookRotation(new Vector3(diatance.x, 0f, diatance.z));
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotate_speed * Time.deltaTime);
 
         transform.position += Vector3.ProjectOnPlane(transform.forward, Vector3.up) * move_speed / 100;
