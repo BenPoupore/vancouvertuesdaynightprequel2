@@ -31,7 +31,7 @@ public class enemy_1_behaviour : MonoBehaviour
 //Debug.Log(diatance.magnitude);
         if (diatance.magnitude > attack_radius){bullet_launcher.SetActive(false);}
         else { bullet_launcher.SetActive(true); }
-        Debug.Log(diatance.magnitude);
+        //Debug.Log(diatance.magnitude);
         if (diatance.magnitude < strafe_radius)
         {
             private_strafe_speed = Mathf.PerlinNoise(Time.time, transform.position.y);

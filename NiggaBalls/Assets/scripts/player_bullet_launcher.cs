@@ -17,6 +17,8 @@ public class player_bullet_launcher : MonoBehaviour
 
     void Update(){
 
+        //set_position_and_rotation_to_cam();
+
         if (fullauto && Input.GetMouseButton(0) && Time.time >= nextfiretime)
         {
             spawnbullet();
@@ -27,6 +29,12 @@ public class player_bullet_launcher : MonoBehaviour
 
     void spawnbullet() {
         GameObject newbullet = Instantiate(bullet, transform.position, transform.rotation);
+    }
+
+    private void set_position_and_rotation_to_cam()
+    {
+        transform.position = cam.transform.position;
+        transform.rotation = cam.transform.rotation;
     }
 }
 

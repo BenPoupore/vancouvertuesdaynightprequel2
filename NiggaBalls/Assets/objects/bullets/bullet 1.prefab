@@ -110,7 +110,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -154,10 +154,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4820645198890126731}
-  speed: 50
+  speed: 35.1
   despawn_radius: 50
   despawn_time: 50
   precision: 0.1
   enable_precision: 0
-  player: {fileID: 0}
-  bullet_damage: 10
+  bullet_damage: 18
