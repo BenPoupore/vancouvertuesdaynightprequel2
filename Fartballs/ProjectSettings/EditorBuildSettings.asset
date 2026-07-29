@@ -5,8 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/SafeHouse.unity
+    guid: fa6297f05a3e16147b8d1d564d09e1b7
+  - enabled: 1
+    path: Assets/Scenes/Briefing.unity
+    guid: 23b1e106e4688df458f76b9b1edeea9b
+  - enabled: 1
+    path: Assets/Scenes/Mission01.unity
+    guid: c467f7eb963bf4843ad2f3d48b91fbd9
+  - enabled: 1
+    path: Assets/Scenes/Debrief.unity
+    guid: c071f0fe31ec9af43ab53d08f5281906
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

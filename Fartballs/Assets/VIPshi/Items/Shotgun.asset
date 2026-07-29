@@ -18,7 +18,7 @@ MonoBehaviour:
   icon: {fileID: 7482667652216324306, guid: c7e566de0d2cd61458ae6d2f8935b36a, type: 3}
   category: 0
   stashCategory: 0
-  equipmentSlot: 1
+  equipmentSlot: 2
   gridWidth: 5
   gridHeight: 1
   rotatable: 1
