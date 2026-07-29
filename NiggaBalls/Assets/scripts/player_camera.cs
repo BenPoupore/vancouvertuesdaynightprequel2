@@ -11,22 +11,28 @@ public class player_camera : MonoBehaviour
 
     private float rotY = 0.0f;
 
+    void Start()
+    {
+        center_on_player();
+    }
+
     void Update()
     {
+        player_cam_mode();
+    }
 
-        player.transform.position = transform.position;
+    private void center_on_player()
+    {
+        transform.position = player.transform.position;
+        transform.rotation = player.transform.rotation;
+    }
 
+    private void player_cam_mode()
+    {
         float rotX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivityX;
         rotY += Input.GetAxis("Mouse Y") * mouseSensitivityY;
         rotY = Mathf.Clamp(rotY, -89.5f, 89.5f);
         transform.localEulerAngles = new Vector3(-rotY, rotX, 0.0f);
-
-        float forward = Input.GetAxis("Vertical");
-        float strafe = Input.GetAxis("Horizontal");
-
-        // move forwards/backwards
-
-        Vector3 trans = new Vector3(-strafe * speed * Time.deltaTime, 0.0f, -forward * speed * Time.deltaTime);
-        transform.position += gameObject.transform.localRotation * trans;
+        transform.position = player.transform.position;
     }
 }

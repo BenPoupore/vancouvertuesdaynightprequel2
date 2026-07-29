@@ -31,9 +31,8 @@ public class player_move : MonoBehaviour
         float rotX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivityX;
         rotY += Input.GetAxis("Mouse Y") * mouseSensitivityY;
         rotY = Mathf.Clamp(rotY, -89.5f, 89.5f);
-        transform.localEulerAngles = new Vector3(-rotY, rotX, 0.0f);
+        transform.localEulerAngles = new Vector3(0, rotX, 0.0f);
 
-        //Stransform.position += gameObject.transform.localRotation * trans;
 
         // player translation
 
@@ -64,7 +63,7 @@ public class player_move : MonoBehaviour
     {
         bullet_behaviour enemyScript = other.GetComponent<bullet_behaviour>();
 
-        //Debug.Log(other.name + " entered");
+        Debug.Log(other.name + " entered");
         if (enemyScript != null) {
             //Debug.Log(enemyScript.bullet_damage);
             health -= enemyScript.bullet_damage; 
