@@ -13,7 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Mouse Look")]
     public Transform cameraTransform;
     public float mouseSensitivity = 0.1f; // new Input System mouse delta is in pixels, so this is much smaller than before
-    public float lookXLimit = 85f;
+    public float lookYLimit = 85f;
+    private float mouseX, mouseY;
 
     [Header("Ground Check")]
     public LayerMask groundMask = ~0;
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 velocity;
     private float verticalRotation = 0f;
+    private float horizontalRotation = 0f;
     private bool isGrounded;
 
     void Start()
@@ -41,15 +43,17 @@ public class PlayerMovement : MonoBehaviour
         if (Mouse.current == null) return;
 
         Vector2 mouseDelta = Mouse.current.delta.ReadValue();
-        float mouseX = mouseDelta.x * mouseSensitivity;
-        float mouseY = mouseDelta.y * mouseSensitivity;
+        mouseX += mouseDelta.x * mouseSensitivity;
+        mouseY -= mouseDelta.y * mouseSensitivity;
 
-        transform.Rotate(Vector3.up * mouseX);
+        mouseY = Mathf.Clamp(mouseY, -lookYLimit, lookYLimit);
 
-        verticalRotation -= mouseY;
-        verticalRotation = Mathf.Clamp(verticalRotation, -lookXLimit, lookXLimit);
-        if (cameraTransform != null)
-            cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
+        transform.rotation = Quaternion.Euler(mouseY, mouseX, 0f);
+
+        //horizontalRotation += mouseX;
+        //horizontalRotation = Mathf.Clamp(horizontalRotation, -lookYLimit, lookYLimit);
+        //if (cameraTransform != null)
+        //cameraTransform.localRotation = Quaternion.Euler(verticalRotation, horizontalRotation, 0f);
     }
 
     void HandleMovement()
