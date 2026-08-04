@@ -124,8 +124,8 @@
     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\Runtime\Core\BuiltinMaterials.cs" />
     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\Runtime\Core\SerializationUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\Runtime\MeshOperations\VertexEditing.cs" />
-    <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\Runtime\Core\VectorHash.cs" />
     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\Runtime\MeshOperations\MeshImporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\Runtime\Core\VectorHash.cs" />
     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\Runtime\Core\MeshUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\Runtime\MeshOperations\ConnectElements.cs" />
     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\Runtime\Core\SimpleTuple.cs" />

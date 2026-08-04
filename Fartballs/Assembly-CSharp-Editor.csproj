@@ -1497,6 +1497,10 @@
       <Project>{27E27031-67BF-94F0-DE87-8E632067367C}</Project>
       <Name>Unity.VisualScripting.Flow</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
+      <Project>{536AC91A-6AFC-E214-47F5-007D068AC4CD}</Project>
+      <Name>Unity.ProBuilder.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{5E2CD2BF-0D07-893A-C17E-1A2427475B2F}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
@@ -1521,9 +1525,9 @@
       <Project>{88EDC8A9-5432-0CF8-0B5A-14E4C1F423AE}</Project>
       <Name>Unity.InputSystem.ForUI</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.RenderPipelines.GPUDriven.Runtime.csproj">
-      <Project>{68AAE2EF-25C1-C8DD-B6F9-9B6CD0B98752}</Project>
-      <Name>Unity.RenderPipelines.GPUDriven.Runtime</Name>
+    <ProjectReference Include="Unity.ProBuilder.AddOns.Editor.csproj">
+      <Project>{73058D9C-10FA-FA15-6AD6-E0478DF3DA6C}</Project>
+      <Name>Unity.ProBuilder.AddOns.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
       <Project>{2B49C39A-2B35-182B-241A-1897C19A338B}</Project>
@@ -1532,6 +1536,10 @@
     <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
       <Project>{EF5E2BBC-3FDA-165E-E343-DB38408645C0}</Project>
       <Name>Unity.VisualScripting.State.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.RenderPipelines.GPUDriven.Runtime.csproj">
+      <Project>{68AAE2EF-25C1-C8DD-B6F9-9B6CD0B98752}</Project>
+      <Name>Unity.RenderPipelines.GPUDriven.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{16A1BCBC-0D73-BC32-4088-B486E0D41DDC}</Project>
@@ -1569,9 +1577,17 @@
       <Project>{38F9A13F-9206-D6C0-E16D-F0FB9214F547}</Project>
       <Name>Unity.PathTracing.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.AssetIdRemapUtility.csproj">
+      <Project>{E7417A83-F094-361F-6145-558B636F956B}</Project>
+      <Name>Unity.ProBuilder.AssetIdRemapUtility</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.csproj">
       <Project>{8202DF2D-9C66-E9F8-658F-E4638CEEE473}</Project>
       <Name>Unity.RenderPipelines.Universal.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.csproj">
+      <Project>{7C0DFD2D-EE0E-E420-BFBE-260C0EDCBFC3}</Project>
+      <Name>Unity.ProBuilder</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{0F2D11DC-A001-21C3-6D92-2A5C26A5A89C}</Project>
@@ -1604,6 +1620,10 @@
     <ProjectReference Include="Unity.InputSystem.csproj">
       <Project>{DE12861A-C369-CD51-29E6-78E4F9F69BC0}</Project>
       <Name>Unity.InputSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Settings.Editor.csproj">
+      <Project>{8BAEDDA4-2F72-17A1-CEF6-C75397C31300}</Project>
+      <Name>Unity.Settings.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{6BE892E5-6166-E68D-A053-DDC3123C3127}</Project>

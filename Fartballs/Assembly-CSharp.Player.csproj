@@ -1106,6 +1106,10 @@
       <Project>{DB403447-D26B-7EB4-A74D-345CD11EB1E5}</Project>
       <Name>Unity.RenderPipelines.Universal.Runtime.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.Player.csproj">
+      <Project>{A56802EB-7159-E3A4-0C87-8E88605EC322}</Project>
+      <Name>Unity.ProBuilder.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
       <Project>{76FF1165-AE76-FF4E-02CF-0C4B8CB0C032}</Project>
       <Name>Unity.VisualScripting.State.Player</Name>
