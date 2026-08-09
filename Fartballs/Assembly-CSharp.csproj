@@ -107,6 +107,7 @@
     <Compile Include="Assets\scripts\BriefingController.cs" />
     <Compile Include="Assets\scripts\NonsenseMarketController.cs" />
     <Compile Include="Assets\scripts\PlayerMarker.cs" />
+    <Compile Include="Assets\scripts\playerMelee.cs" />
     <Compile Include="Assets\scripts\Inventory stashV2\EquipmentSlotDrop.cs" />
     <Compile Include="Assets\scripts\ItemCatalog.cs" />
     <Compile Include="Assets\scripts\WaveManager.cs" />

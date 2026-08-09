@@ -7,8 +7,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float walkSpeed = 6f;
     public float sprintSpeed = 10f;
+    public float leapSpeed = 8f;
     public float jumpHeight = 1.5f;
-    public float gravity = -19.6f; // ~2x Unity default gravity feels better for FPS
+    public float gravity = 19.6f; // ~2x Unity default gravity feels better for FPS
 
     [Header("Mouse Look")]
     public Transform cameraTransform;
@@ -49,11 +50,6 @@ public class PlayerMovement : MonoBehaviour
         mouseY = Mathf.Clamp(mouseY, -lookYLimit, lookYLimit);
 
         transform.rotation = Quaternion.Euler(mouseY, mouseX, 0f);
-
-        //horizontalRotation += mouseX;
-        //horizontalRotation = Mathf.Clamp(horizontalRotation, -lookYLimit, lookYLimit);
-        //if (cameraTransform != null)
-        //cameraTransform.localRotation = Quaternion.Euler(verticalRotation, horizontalRotation, 0f);
     }
 
     void HandleMovement()
@@ -76,7 +72,9 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * horizontal + transform.forward * vertical;
         move = Vector3.ClampMagnitude(move, 1f);
 
-        float currentSpeed = Keyboard.current.leftShiftKey.isPressed ? sprintSpeed : walkSpeed;
+        float currentSpeed = walkSpeed;
+        if (Keyboard.current.leftShiftKey.isPressed) { currentSpeed = sprintSpeed; }
+        if (!isGrounded) { currentSpeed = leapSpeed; }
         controller.Move(move * currentSpeed * Time.deltaTime);
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)

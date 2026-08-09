@@ -187,7 +187,6 @@ public class PlayerShooter : MonoBehaviour
         else
             ShootProjectile(weapon);
     }
-
     void ShootHitscan(WeaponSlot weapon)
     {
         int pellets = Mathf.Max(1, weapon.pelletCount);
@@ -248,8 +247,7 @@ public class PlayerShooter : MonoBehaviour
             playerCamera.transform.rotation
         );
 
-        BulletProjectile projectile =
-            bullet.GetComponent<BulletProjectile>();
+        BulletProjectile projectile = bullet.GetComponent<BulletProjectile>();
 
         if (projectile != null)
         {
